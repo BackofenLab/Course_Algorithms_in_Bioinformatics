@@ -4,11 +4,11 @@ class NeedlemanWunsch:
     """
 
     def run(self,
-                    seq1_fasta_fn,
-                    seq2_fasta_fn,
-                    subst_matrix_fn,
-                    cost_gap_open,
-                    complete_traceback):
+            seq1_fasta_fn,
+            seq2_fasta_fn,
+            subst_matrix_fn,
+            cost_gap_open,
+            complete_traceback):
         """
         Calculate optimal alignment(s) with Needleman-Wunsch algorithm.
 
