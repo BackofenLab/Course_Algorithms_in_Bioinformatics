@@ -1,8 +1,13 @@
-class NeedlemanWunsch:
+import abc
+
+
+class NeedlemanWunschBase(metaclass=abc.ABCMeta):
+
     """
-    Needleman-Wunsch
+    Base class for Needleman-Wunsch implementations.
     """
 
+    @abc.abstractmethod
     def run(self,
             seq1_fasta_fn,
             seq2_fasta_fn,
@@ -28,4 +33,3 @@ class NeedlemanWunsch:
              score: score of optimal alignment,
              [(aln_string_seq1, aln_string_seq2), ...]: list of tuples containing optimal alignments)
         """
-        pass
