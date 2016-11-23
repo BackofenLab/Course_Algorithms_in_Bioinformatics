@@ -1,4 +1,5 @@
-from prakt import NeedlemanWunschBase
+from prakt.nw import NeedlemanWunschBase
+
 
 @NeedlemanWunschBase.register
 class NeedlemanWunsch(NeedlemanWunschBase):
