@@ -2,6 +2,8 @@ from needleman_wunsch import NeedlemanWunsch
 
 
 def test_example():
+    """Example testing the dummy implementation."""
+
     nw = NeedlemanWunsch()
     result = nw.run("data/sequence1.fa",
                     "data/sequence2.fa",
@@ -20,6 +22,8 @@ def test_example():
 
 
 def test_example_fail():
+    """Example of a failing test."""
+
     nw = NeedlemanWunsch()
     result = nw.run("data/sequence1.fa",
                     "data/sequence2.fa",
