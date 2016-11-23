@@ -1,10 +1,10 @@
 import abc
 
 
-class NeedlemanWunschBase(metaclass=abc.ABCMeta):
+class GotohBase(metaclass=abc.ABCMeta):
 
     """
-    Base class for Needleman-Wunsch implementations.
+    Base class for Gotoh implementations.
     """
 
     @abc.abstractmethod
@@ -12,8 +12,7 @@ class NeedlemanWunschBase(metaclass=abc.ABCMeta):
             seq1_fasta_fn,
             seq2_fasta_fn,
             subst_matrix_fn,
-            factor_gap_alpha,
-            factor_gap_beta,
+            cost_gap_open,
             complete_traceback):
         """
         Calculate optimal alignment(s) with Needleman-Wunsch algorithm.
@@ -22,8 +21,7 @@ class NeedlemanWunschBase(metaclass=abc.ABCMeta):
             seq1_fasta_fn: path to fasta file containing first sequence
             seq2_fasta_fn: path to fasta file containing second sequence
             subst_matrix_fn: path to substitution matrix
-            factor_gap_alpha: affine gap penalty alpha
-            factor_gap_beta: affine gap penalty beta
+            cost_gap_open: cost to open a gap
             complete_traceback: If True, return all optimal alignments. Otherwise choose a random alignment.
 
         Returns:
