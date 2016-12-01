@@ -9,8 +9,8 @@ class Gotoh(GotohBase):
             seq1_fasta_fn,
             seq2_fasta_fn,
             subst_matrix_fn,
-            factor_gap_alpha,
-            factor_gap_beta,
+            affine_cost_gap_open,
+            affine_cost_gap_extend,
             complete_traceback):
             """Document me!"""
             # return some dummy results

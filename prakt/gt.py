@@ -12,7 +12,8 @@ class GotohBase(metaclass=abc.ABCMeta):
             seq1_fasta_fn,
             seq2_fasta_fn,
             subst_matrix_fn,
-            cost_gap_open,
+            affine_cost_gap_open,
+            affine_cost_gap_extend,
             complete_traceback):
         """
         Calculate optimal alignment(s) with Needleman-Wunsch algorithm.
@@ -22,6 +23,7 @@ class GotohBase(metaclass=abc.ABCMeta):
             seq2_fasta_fn: path to fasta file containing second sequence
             subst_matrix_fn: path to substitution matrix
             cost_gap_open: cost to open a gap
+            cost_gap_extend: cost to extend a gap
             complete_traceback: If True, return all optimal alignments. Otherwise choose a random alignment.
 
         Returns:
