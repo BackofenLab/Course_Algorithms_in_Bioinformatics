@@ -5,7 +5,12 @@ from prakt.nw import NeedlemanWunschBase
 class NeedlemanWunsch(NeedlemanWunschBase):
     """Document me!"""
 
-    def run(self, seq1_fasta_fn, seq2_fasta_fn, subst_matrix_fn, cost_gap_open, complete_traceback):
+    def run(self,
+            seq1_fasta_fn,
+            seq2_fasta_fn,
+            subst_matrix_fn,
+            cost_gap_open,
+            complete_traceback):
             """Document me!"""
             # return some dummy results
             return ("idA",
