@@ -1,4 +1,11 @@
+from prakt.nw import NeedlemanWunschBase
 from needleman_wunsch import NeedlemanWunsch
+
+
+def test_instance():
+    """Check inheritance."""
+    assert issubclass(NeedlemanWunsch, NeedlemanWunschBase)
+    assert isinstance(NeedlemanWunsch(), NeedlemanWunschBase)
 
 
 def test_example():
